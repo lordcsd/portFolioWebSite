@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(33, 33, 33);
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+header {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  color: white;
+  /* filter: blur(4px); */
+}
+
+header > h1 {
+  font-size: 3em;
+  word-break: break-word;
+}
+
+.socials button {
+  background-color: rgb(49, 155, 115);
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 1.5rem;
+  margin: 10px 10px 10px 0;
+  border-radius: 5px;
+}
+
+.cardContain {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.someCard {
+  background-color: rgb(22, 22, 22);
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.someCard > h1 {
+  margin-bottom: 10px;
+}
+
+.technologies {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.technologies > span {
+  border-radius: 5px;
+  background-color: orange;
+  padding: 10px;
+  font-weight: bold;
+  margin: 10px 10px 10px 0;
+}
+
+@media (max-width: 600px) {
+  .cardContain {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+}
