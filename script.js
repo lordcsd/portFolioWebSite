@@ -2,6 +2,8 @@ window.addEventListener("scroll", (e) => {
   console.log(window.scrollY);
 });
 
+var initialStyle = "";
+
 let skillsContainer = document.querySelector(".cardContain");
 
 let skills = [
@@ -41,14 +43,16 @@ let technologies = [
   "CSS",
   "JavaScript",
   "ReactJS",
-  "Flutter",
   "NodeJS",
+  "Flutter",
   "MongoDB",
-  "MySQL",
+  "SQL",
+  "Blender 3D",
+  "inkscape",
 ];
 
 technologies.forEach((each) => {
-  let p = document.createElement("span");
+  let p = document.createElement("p");
   p.innerText = each;
   technologiesContain.append(p);
 });

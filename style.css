@@ -1,37 +1,54 @@
+:root {
+  --darkBG: #0a192f;
+  --lightBG: #112240;
+  --blueLight: #81a1d8;
+  --greenLight: #56dcbc;
+  --white: #dfe4eb;
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
-  background-color: rgb(33, 33, 33);
+  background-color: var(--darkBG);
   font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 header {
-  height: 50vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   padding: 20px;
-  color: white;
+  flex-wrap: wrap;
+  color: var(--greenLight);
   /* filter: blur(4px); */
 }
 
-header > h1 {
-  font-size: 3em;
-  word-break: break-word;
+header > div {
+  margin: 10px;
 }
 
-.socials button {
-  background-color: rgb(49, 155, 115);
-  color: white;
-  border: none;
-  padding: 10px;
-  font-size: 1.5rem;
-  margin: 10px 10px 10px 0;
-  border-radius: 5px;
+hr {
+  margin: 5px 0;
+}
+
+h1 {
+  font-size: 1.5em;
+  word-break: break-word;
+  color: var(--white);
+  font-weight: normal;
+}
+
+.socialBtn {
+  height: 2rem;
+  margin: 30px 10px 0 0;
+}
+
+.myImage {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 10rem;
 }
 
 .cardContain {
@@ -42,28 +59,63 @@ header > h1 {
 }
 
 .someCard {
-  background-color: rgb(22, 22, 22);
-  color: white;
+  background-color: var(--lightBG);
+  color: var(--blueLight);
   padding: 20px;
   border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.172);
 }
 
 .someCard > h1 {
   margin-bottom: 10px;
 }
 
+.completedProjects {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  list-style: none;
+}
+
+.completedProjects button {
+  background-color: var(--greenLight);
+  color: var(--darkBG);
+  border: none;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 10px 10px 10px 0;
+  border-radius: 5px;
+}
+
+.completedProjects button:hover {
+  cursor: pointer;
+}
 .technologies {
   margin: 20px;
   display: flex;
   flex-wrap: wrap;
 }
 
-.technologies > span {
+.technologies > p {
   border-radius: 5px;
-  background-color: orange;
+  background-color: var(--lightBG);
+  color: var(--blueLight);
   padding: 10px;
   font-weight: bold;
   margin: 10px 10px 10px 0;
+}
+
+footer {
+  background-color: var(--lightBG);
+  padding: 20px;
+  color: white;
+  bottom: 0;
+}
+
+footer p {
+  color: var(--blueLight);
 }
 
 @media (max-width: 600px) {
