@@ -3,7 +3,9 @@
   --lightBG: #112240;
   --blueLight: #81a1d8;
   --greenLight: #56dcbc;
+  --yellow: #fbff23;
   --white: #dfe4eb;
+  --shadow: 0 0 20px rgba(0, 0, 0, 0.172);
 }
 
 * {
@@ -14,9 +16,9 @@
 body {
   margin: 0 10rem;
   background-color: var(--darkBG);
-  font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: cursive;
 }
+
 
 header {
   display: flex;
@@ -33,7 +35,7 @@ hr {
   margin: 5px 0;
 }
 
-.title{
+.title {
   font-size: 2em;
   color: var(--white);
 }
@@ -43,12 +45,21 @@ h1 {
   word-break: break-word;
   color: var(--blueLight);
   font-weight: normal;
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 .aboutMe {
   margin: 20px;
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+.myImage {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
 }
 
 .aboutMe p {
@@ -56,19 +67,11 @@ h1 {
   background-color: var(--lightBG);
   border-radius: 5px;
   padding: 20px;
-  margin-bottom: 20px;
 }
 
 .socialBtn {
   height: 2rem;
   margin: 30px 10px 0 0;
-}
-
-.myImage {
-  height: 20rem;
-  width: 20rem;
-  border-radius: 5px;
-  margin: 1rem;
 }
 
 .cardContain {
@@ -83,7 +86,7 @@ h1 {
   color: var(--blueLight);
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.172);
+  box-shadow: var(--shadow);
 }
 
 .someCard > h1 {
@@ -94,7 +97,6 @@ h1 {
   margin: 20px;
   display: flex;
   flex-wrap: wrap;
-  color: white;
   list-style: none;
 }
 
@@ -120,8 +122,8 @@ h1 {
 
 .technologies > p {
   border-radius: 5px;
-  background-color: var(--lightBG);
-  color: var(--blueLight);
+  background-color: var(--yellow);
+  color: var(--darkBG);
   padding: 10px;
   font-weight: bold;
   margin: 10px 10px 10px 0;
@@ -130,7 +132,6 @@ h1 {
 footer {
   background-color: var(--lightBG);
   padding: 20px;
-  color: white;
   bottom: 0;
 }
 
@@ -142,15 +143,16 @@ footer p {
   body {
     margin: 0;
   }
-  .aboutMe {
-    display: flex;
-    flex-direction: column;
-  }
 }
 @media (max-width: 600px) {
   .cardContain {
     display: grid;
     grid-template-columns: 1fr;
     padding: 20px;
+  }
+
+  .aboutMe {
+    display: flex;
+    flex-direction: column;
   }
 }
