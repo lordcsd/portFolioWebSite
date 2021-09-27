@@ -46,6 +46,7 @@ let technologies = [
   "NodeJS",
   "Flutter",
   "MongoDB",
+  "Git",
   "SQL",
   "Blender 3D",
   "inkscape",
