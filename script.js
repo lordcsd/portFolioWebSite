@@ -1,5 +1,5 @@
 window.addEventListener("scroll", (e) => {
-  console.log(window.scrollY);
+  // console.log(window.scrollY);
 });
 
 var initialStyle = "";
