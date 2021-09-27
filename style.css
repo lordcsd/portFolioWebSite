@@ -1,7 +1,7 @@
 :root {
   --darkBG: #0a192f;
   --lightBG: #112240;
-  --blueLight: #81a1d8;
+  --blueLight: #b1c4e1;
   --greenLight: #56dcbc;
   --yellow: #fbff23;
   --white: #dfe4eb;
@@ -28,7 +28,7 @@ header {
 }
 
 header > div {
-  margin: 10px;
+  margin: 50px 10px;
 }
 
 hr {
