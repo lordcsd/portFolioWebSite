@@ -3,7 +3,6 @@
   --lightBG: #112240;
   --blueLight: #8896af;
   --greenLight: #56dcbc;
-  --yellow: linear-gradient(#f5cd4b, #f0f761);
   --white: #dfe4eb;
   --shadow: 0 0 10px rgba(0, 0, 0, 0.172);
 }
@@ -162,7 +161,7 @@ h1 {
 
 .technologies > p {
   border-radius: 5px;
-  background: var(--yellow);
+  background: var(--greenLight);
   color: var(--darkBG);
   padding: 10px;
   font-weight: bold;
