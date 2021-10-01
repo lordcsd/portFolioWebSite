@@ -1,9 +1,9 @@
 :root {
   --darkBG: #0a192f;
   --lightBG: #112240;
-  --blueLight: #6c7e9d;
+  --blueLight: #8896af;
   --greenLight: #56dcbc;
-  --yellow: linear-gradient(#f5784b, #f79161);
+  --yellow: linear-gradient(#f5cd4b, #f0f761);
   --white: #dfe4eb;
   --shadow: 0 0 10px rgba(0, 0, 0, 0.172);
 }
@@ -26,7 +26,6 @@ body {
   position: absolute;
   background-color: var(--darkBG);
   opacity: 0.4;
-  filter: blur(3px);
   z-index: -3;
 }
 
@@ -171,6 +170,7 @@ h1 {
 }
 
 footer {
+  font-family: "Noto Sans", sans-serif;
   background-color: var(--lightBG);
   padding: 20px;
   bottom: 0;
