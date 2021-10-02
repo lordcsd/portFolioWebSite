@@ -1,7 +1,3 @@
-window.addEventListener("scroll", (e) => {
-  // console.log(window.scrollY);
-});
-
 var initialStyle = "";
 
 let skillsContainer = document.querySelector(".cardContain");
@@ -10,15 +6,15 @@ let skills = [
   {
     title: "Full-Stack Developer",
     description: `Passionate about software development, as a result
-     has years of experience in Software development, having worked 
-     in web technologies and Back-end 
-     technologies, Also has expirience in Mobile Development `,
+     have years of experience in Software development, and have worked 
+     on web frontend, mobile and Back-end software products.`,
   },
   {
     title: "3D Animator",
-    description: `Started out in the technology universe as a 3D animator,
+    description: `Started out in the technology world as a 3D animator,
      using mostly <b>Blender</b> which is an Open-Source 3D animation, Texturing,
-      Motion-Graphics tool and used for several other purposes`,
+      Motion-Graphics and etc tool, for over two years before a total switch
+     to software development.`,
   },
 ];
 
