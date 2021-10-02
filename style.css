@@ -1,6 +1,6 @@
 :root {
-  --darkBG: #0a192f;
-  --lightBG: #112240;
+  --darkBG: #354052;
+  --lightBG: #222935;
   --blueLight: #ffffff;
   --greenLight: #56dcbc;
   --white: #dfe4eb;
@@ -128,6 +128,10 @@ h1 {
   padding: 20px;
   border-radius: 5px;
   box-shadow: var(--shadow);
+}
+.someCard:hover{
+  transition: 1s ease-in;
+  
 }
 
 .someCard > h1 {
