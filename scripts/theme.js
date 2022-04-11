@@ -1,0 +1,21 @@
+var toggle = document.querySelector("#theme-toggle");
+let ThemeStoreName = "CSD_THEME"
+
+var storedTheme = localStorage.getItem(ThemeStoreName) || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+if (storedTheme)
+    document.documentElement.setAttribute('data-theme', storedTheme)
+
+
+toggle.onclick = function() {
+    var currentTheme = document.documentElement.getAttribute("data-theme");
+    var targetTheme = "light";
+
+
+    if (currentTheme === "light") {
+        targetTheme = "dark";
+    }
+
+    document.documentElement.setAttribute('data-theme', targetTheme)
+    localStorage.setItem(ThemeStoreName, targetTheme);
+};
+

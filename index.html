@@ -1,71 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chinonso Sunday Dimgba</title>
     <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/2e6418223d.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header class="top">
       <div class="topBack"></div>
       <div class="topOthers">
         <a href="www.linkedin.com/in/chinonso-dimgba-a1486818b">
-          <img class="socialBtn" src="./iconsPng/linkedin.png" />
+          <i class="fa-brands fa-linkedin"></i>
         </a>
-        <a href="https://github.com/lordcsd"
-          ><img class="socialBtn" src="./iconsPng/github.png"
-        /></a>
+        <a href="https://github.com/lordcsd">
+          <i class="fa-brands fa-github"></i
+        ></a>
         <a href="https://twitter.com/csdimgba">
-          <img class="socialBtn" src="./iconsPng/twitter.png"
-        /></a>
+          <i class="fa-brands fa-twitter"></i
+        ></a>
       </div>
       <a href="#header" id="gotoHeader">^</a>
     </header>
-    <header id="header">
-      <div>
-        <h1 class="title">Chinonso Dimgba</h1>
+    <section id="mainSection">
+      <section id="themeControls">
+        <i id="theme-toggle" class="fa-solid fa-palette"></i>
+      </section>
 
-        <h4>Fullstack Developer</h4>
+      <header id="header">
+        <div>
+          <h1 class="title">Chinonso Dimgba</h1>
+
+          <h4>Fullstack Developer</h4>
+        </div>
+      </header>
+
+      <div class="aboutMe">
+        <img class="myImage" src="./pic.png" />
+        <p>
+          I am Chinonso Sunday Dimgba, Passionate about the craftmanship.
+          Started out as a 3D artist in 2016, and transitioned into software
+          development loving the process involved in creating software products,
+          And since then had been contributing my quota to the development space
+          to improve human living.
+        </p>
       </div>
-    </header>
 
-    <div class="aboutMe">
-      <img class="myImage" src="./pic.png" />
-      <p>
-        I am Chinonso Sunday Dimgba, Passionate about the craftmanship. Started
-        out as a 3D artist in 2016, and transitioned into software development
-        loving the process involved in creating software products, And since
-        then had been contributing my quota to the development space to improve
-        human living.
-      </p>
-    </div>
+      <h1 style="margin: 40px 5px 5px 20px" class="sectionTitle">Skills</h1>
+      <div class="cardContain"></div>
 
-    <h1 style="margin: 40px 5px 5px 20px" class="sectionTitle">Skills</h1>
-    <div class="cardContain"></div>
+      <h1 style="margin: 40px 5px 5px 20px" class="sectionTitle">
+        Experienced in
+      </h1>
+      <div class="technologies"></div>
 
-    <h1 style="margin: 40px 5px 5px 20px" class="sectionTitle">
-      Experienced in
-    </h1>
-    <div class="technologies"></div>
-
-    <h1 style="margin: 40px 5px 5px 20px" class="sectionTitle">
-      Projects worked on
-    </h1>
-    <div class="completedProjects">
-      <a
-        href="https://play.google.com/store/apps/details?id=com.truce.methodisthymnbookeasyread"
-        ><button>Methodist HymnBook EasyRead</button></a
-      >
-      <a href="https://play.google.com/store/apps/details?id=www.tellam.com.ng"
-        ><button>ColorXpert</button></a
-      >
-      <a
-        href="https://play.google.com/store/apps/details?id=com.truce.dicethrower"
-        ><button>Dice Thrower</button></a
-      >
-    </div>
+      <h1 style="margin: 40px 5px 5px 20px" class="sectionTitle">
+        Projects worked on
+      </h1>
+      <div class="completedProjects">
+        <a
+          href="https://play.google.com/store/apps/details?id=com.truce.methodisthymnbookeasyread"
+          ><button>Methodist HymnBook EasyRead</button></a
+        >
+        <a
+          href="https://play.google.com/store/apps/details?id=www.tellam.com.ng"
+          ><button>ColorXpert</button></a
+        >
+        <a
+          href="https://play.google.com/store/apps/details?id=com.truce.dicethrower"
+          ><button>Dice Thrower</button></a
+        >
+      </div>
+    </section>
 
     <footer>
       <div>
@@ -76,5 +87,6 @@
     </footer>
   </body>
 
-  <script type="text/javascript" src="./script.js"></script>
+  <script type="text/javascript" src="./scripts/script.js"></script>
+  <script src="./scripts/theme.js"></script>
 </html>
