@@ -1,44 +1,21 @@
 :root {
-  --mainBG: #354052;
-  --secondBG: #222935;
-  --highlight: #56dcbc;
-  --writing: #ffffff;
+  --mainBG: rgb(246, 252, 255);
+  --highlight: #3f2844;
+  --writing: #333;
   --white: #ffffff;
   --writingInverse: rgb(50, 50, 50);
-  --shadow: 0 0 10px rgba(0, 0, 0, 0.172);
-}
-
-html[data-theme="dark"] {
-  --mainBG: #354052;
-  --secondBG: #222935;
-  --highlight: #56dcbc;
-  --writing: #ffffff;
-  --writingInverse: rgb(50, 50, 50);
-  --shadow: 0 0 10px rgba(0, 0, 0, 0.172);
-}
-
-html[data-theme="light"] {
-  --mainBG: #faf4e1;
-  --secondBG: #ff823e;
-  --highlight: #421152;
-  --writing: rgb(50,50,50);
-  --writingInverse: rgb(255, 255, 255);
-  --shadow: 0 0 10px rgba(0, 0, 0, 0.172);
+  --shadow: 0 0 15px rgba(0, 0, 0, 0.15);
 }
 
 * {
   margin: 0;
   padding: 0;
+  font-size: 16px;
 }
 
 body {
   background-color: var(--mainBG);
-  font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-#mainSection{
-  margin: 0 5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .topBack {
@@ -107,44 +84,52 @@ h1 {
   color: var(--writing);
 }
 
-.aboutMe {
-  margin: 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 2rem;
+.top-container {
+  display: flex;
+  justify-content: center;
 }
 
-.myImage {
-  width: 100%;
+.aboutMe {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  color: var(--white);
+  background-color: var(--highlight);
+}
+
+.aboutMe .myImage {
+  width: 300px;
   object-fit: cover;
-  border-radius: 5px;
+  border-radius: 50%;
+}
+
+.aboutMe .myImage:hover{
+  transition: 1s;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
 }
 
 .aboutMe p {
-  color: var(--white);
-  background-color: var(--secondBG);
-  border-radius: 5px;
-  padding: 20px;
-  box-shadow: var(--shadow);
+  padding: 1rem;
+  width: 50%
 }
 
 .workExperience {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
-  padding: 20px;
+  padding: 20px; */
 }
 
 .cardContain {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr; */
   grid-gap: 20px;
   padding: 20px;
 }
 
 .someCard {
-  background-color: var(--secondBG);
-  color: var(--white);
+  background-color: var(--white);
+  color: var(--writing);
   padding: 20px;
   border-radius: 5px;
   box-shadow: var(--shadow);
@@ -177,6 +162,7 @@ h1 {
   font-size: 1rem;
   margin: 10px 10px 10px 0;
   border-radius: 5px;
+  text-align: start;
 }
 
 .completedProjects button:hover {
@@ -199,7 +185,7 @@ h1 {
 
 footer {
   /* font-family: "Noto Sans", sans-serif; */
-  background-color: var(--secondBG);
+  background-color: var(--highlight);
   color: var(--white);
   padding: 20px;
   bottom: 0;
@@ -207,11 +193,11 @@ footer {
 
 footer p {
   color: var(--white);
-  font-weight: lighter;
 }
 
-footer h1{
+footer h1 {
   color: var(--white);
+  padding: 0 0 20px 0;
 }
 
 #themeControls {
@@ -221,7 +207,7 @@ footer h1{
   width: 50px;
   right: 5%;
   bottom: 5%;
-  background-color: var(--secondBG);
+  background-color: var(--highlight);
   padding: 10px;
   border-radius: 50%;
   box-shadow: var(--shadow);
@@ -248,5 +234,14 @@ footer h1{
   .aboutMe {
     display: flex;
     flex-direction: column;
+  }
+
+  .aboutMe .myImage {
+    width: 80%;
+  }
+
+  .aboutMe p {
+    padding: 1em 0;
+    width: 100%;
   }
 }

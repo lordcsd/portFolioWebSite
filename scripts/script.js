@@ -4,17 +4,10 @@ let skillsContainer = document.querySelector(".cardContain");
 
 let skills = [
   {
-    title: "Full-Stack Developer",
+    title: "Full-Stack Developer: Backend Intensive",
     description: `Passionate about software development, as a result
      have years of experience in Software development, and have worked 
-     on web frontend, mobile and Back-end software products.`,
-  },
-  {
-    title: "3D Animator",
-    description: `Started out in the technology world as a 3D animator,
-     using mostly <b>Blender</b> which is an Open-Source 3D animation, Texturing,
-      Motion-Graphics and etc tool, for over two years before a total switch
-     to software development.`,
+     on web frontend, mobile and Backend software products.`,
   },
 ];
 
@@ -47,7 +40,6 @@ let technologies = [
   "MongoDB",
   "Git",
   "SQL",
-  "Blender 3D",
   "inkscape",
 ];
 
