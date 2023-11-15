@@ -1,8 +1,7 @@
 :root {
-  --mainBG: rgb(246, 252, 255);
-  --highlight: #3f2844;
-  --writing: #333;
-  --white: #ffffff;
+  --mainBG: rgb(37, 19, 17);
+  --highlight: rgba(98, 63, 58, 0.8);
+  --white: rgb(227, 204, 201);
   --writingInverse: rgb(50, 50, 50);
   --shadow: 0 0 15px rgba(0, 0, 0, 0.15);
 }
@@ -11,6 +10,16 @@
   margin: 0;
   padding: 0;
   font-size: 16px;
+}
+
+#content {
+  background: url(./484402.svg);
+  background-size: 300px;
+  height: 100vh;
+  width: 100vw;
+  opacity: 0.05;
+  position: fixed;
+  z-index: -1;
 }
 
 body {
@@ -23,7 +32,7 @@ body {
   width: 100%;
   position: absolute;
   background-color: var(--mainBG);
-  opacity: 0.4;
+  opacity: 0.7;
   z-index: -3;
 }
 
@@ -47,9 +56,10 @@ body {
   align-items: center;
   box-shadow: var(--shadow);
   width: 100vw;
+  border-bottom: 1px solid rgb(230, 185, 101) ;
 }
 .top a {
-  color: var(--writing);
+  color: var(--white);
   font-size: 20px;
 }
 
@@ -73,7 +83,7 @@ hr {
 }
 
 .title {
-  color: var(--writing);
+  color: var(--white);
   font-size: 3rem;
 }
 
@@ -81,7 +91,7 @@ h1 {
   font-size: 1.5em;
   word-break: break-word;
   font-weight: normal;
-  color: var(--writing);
+  color: var(--white);
 }
 
 .top-container {
@@ -103,14 +113,14 @@ h1 {
   border-radius: 50%;
 }
 
-.aboutMe .myImage:hover{
+.aboutMe .myImage:hover {
   transition: 1s;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
 }
 
 .aboutMe p {
   padding: 1rem;
-  width: 50%
+  width: 50%;
 }
 
 .workExperience {
@@ -128,7 +138,7 @@ h1 {
 }
 
 .someCard {
-  background-color: var(--white);
+  background-color: var(--highlight);
   color: var(--writing);
   padding: 20px;
   border-radius: 5px;
